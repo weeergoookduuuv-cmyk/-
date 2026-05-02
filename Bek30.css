@@ -126,7 +126,7 @@ border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* Эффект при наведении на любую из кнопок */
+
 .course-btn:hover {
     background: Crimson;
     transform: translateY(-5px);
@@ -144,16 +144,16 @@ border-radius: 15px;
 }
 
  
-/* Делаем контейнер гибким, чтобы картинки встали в ряд */
+
 .my-icons {
     display: flex;
-    gap: 5px; /* Расстояние между картинками */
+    gap: 5px; 
 }
 
-/* Уменьшаем ТОЛЬКО эти три картинки */
+
 .my-icons img {
-    width: 400px;  /* Настрой ширину, какая тебе нравится */
-    height: 350;  /* Чтобы пропорции не исказились */
+    width: 400px;  
+    height: 350;  
 }
 
 @media only screen and (max-width: 600px){
