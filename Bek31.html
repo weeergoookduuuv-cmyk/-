@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Премиум Колледж Технологий</title>
+    <link rel="stylesheet" href="Bek30.css">
+    <script src="Bek.js"></script>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            
+            background: linear-gradient(135deg, MidnightBlue, DarkSlateGrey);
+            color: White;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1523050853063-bd8012fbb7a8?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+        }
+
+        .header-content {
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            color: DeepSkyBlue; 
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 40px;
+            background: Crimson; 
+            color: White;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .btn:hover {
+            background: transparent;
+            border-color: White;
+            transform: scale(1.1);
+        }
+
+        
+        section {
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: Gold; 
+        }
+
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .item {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 15px;
+            transition: 0.4s;
+            border-top: 4px solid LimeGreen; 
+        }
+
+        .item:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        
+        .footer {
+            background: Black;
+            padding: 50px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: DarkGray;
+        }
+
+        .contact-info b {
+            color: Tomato;
+        }
+
+                .divider {
+            height: 4px;
+            width: 100px;
+            background: Aqua;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+        <div class="header-content">
+            <h1>OSMU COLLEGE</h1>
+            <p>Твое будущее начинается здесь. Профессионализм. Инновации. Успех.</p>
+            <div class="divider"></div>
+            <a href="#about" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="glass-card">
+            <h2>ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
+            <p>Наш колледж предоставляет передовое обучение в сфере IT, экономики и дизайна. Мы не просто даем теорию — мы готовим тебя к реальной работе в крупных компаниях. Современные лаборатории, опытные наставники и яркая студенческая жизнь.</p>
+        </div>
+
+        <h2>НАШИ НАПРАВЛЕНИЯ</h2>
+        <div class="grid">
+            <div class="item">
+                <h3> IT-Разработка</h3>
+                <p>Программирование на Python, Java, создание веб-сайтов и мобильных приложений.</p>
+            </div>
+            <div class="item">
+                <h3> Экономика</h3>
+                <p>Управление финансами, бизнес-аналитика и современные банковские технологии.</p>
+            </div>
+            <div class="item">
+                <h3> Дизайн</h3>
+                <p>Графический дизайн, UI/UX и работа с цифровым контентом.</p>
+            </div>
+            <div class="item">
+                <h3> Кибербезопасность</h3>
+                <p>Защита данных, этичный хакинг и сетевая безопасность.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: rgba(0,0,0,0.2);">
+        <h2>ЭТАПЫ ПОСТУПЛЕНИЯ</h2>
+        <div class="grid">
+            <div class="item" style="border-top-color: Orange;">
+                <h1>1</h1>
+                <p>Подача документов</p>
+            </div>
+            <div class="item" style="border-top-color: Violet;">
+                <h1>2</h1>
+                <p>Вступительный тест</p>
+            </div>
+            <div class="item" style="border-top-color: Chartreuse;">
+                <h1>3</h1>
+                <p>Зачисление</p>
+            </div>
+        </div>
+    </section>
+
+
+    <pre><h1>     НАШ КОЛЛЕДЖ ПРИВЕТСТВУЕТ ВАС </h1></pre>                            
+
+<div class="photo-grid" style="display: flex; justify-content: center; width: 100%; margin-top: 30px;">
+    <img src="photo1.jpg" alt="Майнкрафт 1" style="width: 95%; max-width: 1400px; height: 650px; border-radius: 15px; border: 2px solid #4CAF50;">      
+</div>
+
+
+
+
+
+    <div class="footer">
+        <div class="contact-info">
+            <p> Адрес: <b>ул. Студенческая, 101</b></p>
+            <p> Телефон: <b>+996 (555) 00-11-22</b></p>
+            <p> Email: <b>info@college-pro.edu</b></p>
+        </div>
+        <br>
+        <hr style="border-color: #333;">
+        <br>
+        <p>&copy; 2026 Премиум Колледж. Все права защищены. Дизайн выполнен в Sublime Text.</p>
+    </div>
+
+
+<div class="flex-container">
+    
+    	
+
+
+<h4><pre>
+<details style="background: Green; color: White; border-radius: 10px;">
+<summary style="cursor: pointer; padding: 75px; background: Green; color: White; display: inline-block;">
+ 
+ УЧЕБНОЕ ВРЕМЯ 1 КУРСА 
+ 
+</summary>
+                 (1 ПАРА) 8:00
+                 (2 ПАРА) 9:40
+                 ( BFT. )11:10
+                 (3 ПАРА) 11:40
+                 (3 ПАРА) 12:50
+</details></pre></h4>	
+
+
+
+<h4><pre>
+<details style="background: Green; color: White; border-radius: 10px;">
+<summary style="cursor: pointer; padding: 75px; background: Green; color: White; display: inline-block;">
+ 
+ УЧЕБНОЕ ВРЕМЯ 2 КУРСА 
+ 	
+</summary>
+                 (1 ПАРА) 14:00
+                 (2 ПАРА) 15:40
+                 (3 ПАРА ) 17:20
+                 (4 ПАРА) 19:00
+  
+</details></pre></h4>	
+
+
+
+<h4><pre>
+<details style="background: Green; color: White; border-radius: 10px;">
+<summary style="cursor: pointer; padding: 75px; background: Green; color: White; display: inline-block;">
+ 
+ УЧЕБНОЕ ВРЕМЯ 3 КУРСА 
+ 
+</summary>
+                 (1 ПАРА) 8:00
+                 (2 ПАРА) 9:40
+                 ( BFT. )11:10
+                 (3 ПАРА) 11:40
+                 (3 ПАРА) 12:50
+</details></pre></h4>	
+
+
+
+<h4><pre>
+<details style="background: Green; color: White; border-radius: 10px;">
+<summary style="cursor: pointer; padding: 75px; background: Green; color: White; display: inline-block;">
+ 
+ УЧЕБНОЕ ВРЕМЯ 4 КУРСА 
+   
+</summary>
+                 (1 ПАРА) 14:00
+                 (2 ПАРА) 15:40
+                 (3 ПАРА ) 17:20
+                 (4 ПАРА) 19:00
+  
+  
+</details></pre></h4>	
+
+
+
+<h4><pre>
+<details style="background: Green; color: White; border-radius: 10px;">
+<summary style="cursor: pointer; padding: 75px; background: Green; color: White; display: inline-block;">
+ 
+ УЧЕБНОЕ ВРЕМЯ 5 КУРСА 	
+  
+</summary>
+                 (1 ПАРА) 8:00
+                 (2 ПАРА) 9:40
+                 ( BFT. )11:10
+                 (3 ПАРА) 11:40
+                 (3 ПАРА) 12:50
+</details></pre></h4>	
+	
+		
+
+<h4><pre>
+<details style="background: Green; color: White; border-radius: 10px;">
+<summary style="cursor: pointer; padding: 75px; background: Green; color: White; display: inline-block;">
+ 
+ ОТВЕТЫ НА ВОПРОСЫ 1 	
+ 
+</summary>
+                 (1 ПАРА) 8:00
+                 (2 ПАРА) 9:40
+                 ( BFT. )11:10
+                 (3 ПАРА) 11:40 
+  
+</details></pre></h4>
+
+
+
+<h4><pre>
+<details style="background: Green; color: White; border-radius: 10px;">
+<summary style="cursor: pointer; padding: 75px; background: Green; color: White; display: inline-block;">
+ 
+ ОТВЕТЫ НА ВОПРОСЫ 2 	
+ 
+</summary>
+                 (1 ПАРА) 8:00
+                 (2 ПАРА) 9:40
+                 ( BFT. )11:10
+                 (3 ПАРА) 11:40 
+  
+</details></pre></h4>
+
+
+
+<h4><pre>
+<details style="background: Green; color: White; border-radius: 10px;">
+<summary style="cursor: pointer; padding: 75px; background: Green; color: White; display: inline-block;">
+ 
+ ОТВЕТЫ НА ВОПРОСЫ 3	 	     
+ 
+</summary>
+                 (1 ПАРА) 8:00
+                 (2 ПАРА) 9:40
+                 ( BFT. )11:10
+                 (3 ПАРА) 11:40
+
+  
+</details></pre></h4>       
+
+	           
+
+
+<div class="class-3"> <h2><pre><a href="ttps://youtu.be/34Rp6KVGIEM?si=Ut2t6cDVqx6OOQhp"><button>//////////////////////</button></a></pre>
+</div>    	
+ 
+
+<div class="courses-container">     
+    <a href="https://youtu.be/_8yZYhAkQjQ" target="_blank">
+        <button class="course-btn">C# для начинающих</button>
+    </a>
+    <a href="https://youtu.be/34Rp6KVGIEM" target="_blank">
+        <button class="course-btn">Python с нуля</button>
+    </a>
+    <a href="https://youtu.be/fHl7UyRjOf0" target="_blank">
+        <button class="course-btn">Java-script для начинающих</button>  
+    </a>
+</div>
+<h1>                                                                              
+..................................................................................................................................................................................................
+......................................................................................................................                                                     .......................
+.....................                                                     .......................
+.....................    ........................................................................
+.....................    ........................................................................
+.....................    ........................................................................
+.....................    ........................................................................
+.....................    .............................................................................................                                                     .......................
+.....................                                                     .......................
+.....................    ...........................................      .......................
+.....................    ...........................................      .......................
+.....................    ...........................................      .......................
+.....................    ...........................................      .......................
+.....................    ...........................................      .......................
+.....................    ...........................................      .......................
+.....................    ...........................................      .......................
+.....................    ...........................................      .......................
+.....................    ...........................................      .......................
+.....................    ...........................................      .......................
+.....................    ...........................................    .......................
+.....................                                                     .......................
+.....................                                                     ........................................................................................................................
+..................................................................................................................................................................................................
+  </h1>     
+        </div>
+    </section>
+</body>
+</html>		
+
+..................................................................................................................................................................................................
+..................................................................................................................................................................................................
+..................................................................................................................................................................................................
